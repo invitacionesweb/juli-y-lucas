@@ -1,0 +1,435 @@
+:root {
+    --color-principal:white;
+    --color-secundario:#CF6562;
+    --color-terciario:#AF7A77;
+    --font-principal:'Dawning of a New Day', cursive;
+    --font-secundaria:'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: var(--color-principal);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 320px;
+    
+
+}
+body p {
+    font-family: var(--font-secundaria);
+    padding: 0;
+
+}
+body h2 {
+    font-family: var(--font-principal);
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+header .boxuno {
+    width: 100%;
+    height: 100vh;
+    max-width: 650px;
+    background-color: var(--color-principal);
+    background-image: url(background/background1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+
+.inicio {
+    text-align: center;
+    padding: 40px 0 40px 0;
+    animation-name: texto;
+    animation-duration: 5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@keyframes texto {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.inicio img {
+    width: 318px;
+    padding: 0;
+}
+header audio {
+    margin-bottom: 10px;
+}
+.boton {
+   border: 1px solid var(--color-secundario);
+   background-color: var(--color-secundario);
+   color: var(--color-principal);
+   padding: 10px 30PX;
+   text-decoration: none;
+}
+.boton:hover {
+    color: var(--color-secundario);
+    background-color: var(--color-principal);
+    border: 1px solid var(--color-secundario);
+    padding: 10px 30PX;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--color-terciario);
+    font-family: var(--font-principal);
+    font-size: 80px !important;
+    padding: 0;
+    margin: 0;
+}
+
+header p {
+    color: var(--color-terciario);
+    font-family: var(--font-secundaria);
+}
+
+.countdown {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    text-align: center;
+    padding: 20px 0;
+}
+.countdown p {
+    margin: 0;
+
+}
+
+/* IMAGEN UNO*/
+
+.lovestory {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.lovestory-text {
+    padding: 60px 40px;
+    text-align: justify;
+}
+
+.lovestory-img {
+    width: 100%;
+    background-image: url(img/5.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.galeria img {
+    width: 25vw;
+}
+.info {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px; 
+    background-image: url(./background/Group.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.info p {
+    font-size: 20px;
+
+}
+.animado {
+    width: 340px;
+    
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.info h2 {
+    color: #000000;
+    font-size: 58px;
+    padding: 10px;
+}
+
+.info .icono {
+    width: 40px;
+}
+.info-cards {
+    padding: 40px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+   
+}
+
+
+.info-cards h2 {
+    font-size: 40px;
+    color: var(--color-terciario);
+
+}
+
+
+.rsvp {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--color-terciario);
+    background-image: url(./img/Group7pc.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.rsvp-text .icono {
+    width: 40px;
+    padding-bottom: 10px;
+}
+.rsvp-card{
+   
+    width: 100%;
+    height: 80vh;
+    padding: 70px;
+    margin:auto;
+    max-width: 520px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+.rsvp-text {
+    max-width: 280px;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+.rsvp-card h2 {
+    color: var(--color-principal);
+    padding: 0;
+    font-size: 40px;
+
+}
+.rsvp-card p{
+    color: var(--color-principal);
+    padding: 0px 8px;
+    font-size: 20px;
+    margin: 0;
+   
+
+}
+
+.dresscode {
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    padding: 40px;
+    text-align: center;
+}
+.dresscode h2 {
+    font-size: 2em;
+}
+.dresscode p {
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+.regalos {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--color-principal);
+    background-image: url(./img/Groupp.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    
+   
+}
+
+.regalos .icono {
+    width: 50px;
+}
+.regalos-card{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    margin:auto;
+    max-width: 520px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.regalos-card h2 {
+    color: var(--color-terciario);
+    padding: 0;
+    font-size: 40px;
+
+}
+.regalos-card p {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+
+    
+}
+
+#contenedor {
+    width: auto;
+    height: 60px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor > div {
+    display: flex;
+}
+
+span#enlace {
+    color: var(--color-terciario);
+    font-size: 1em;
+    padding: 8px ;
+    text-align: center;
+    background-color: var(--color-principal);
+
+    border: 1px solid var(--color-terciario);
+    margin-top: 10px;
+
+}
+
+button#copiador {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 8px;    
+    font-size: 1em;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid var(--color-terciario);
+    margin-top: 10px;
+}
+
+.regalos-card h2 {
+    color: var(--color-principal);
+    padding: 0;
+}
+.regalos-card p{
+    color: var(--color-terciario);
+    padding: 4px 0;
+    font-size: 20px;
+
+}
+.final {
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-principal);
+    background-image:url(background/background1.png);
+    background-repeat: no-repeat;
+    
+
+}
+.final img {
+    width: 320px;
+    
+}
+.end {
+    margin: auto;
+    max-width: 540px;
+    text-align: center;
+    padding: 20px 0;
+    color: var(--color-terciario);
+    
+}
+
+.end h2{
+    font-size: 60px;
+}
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    padding: 40px;
+}
+footer .contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+footer img {
+    width: 60px;
+}
+.contenido ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+.contenido a {
+    color: var(--color-principal);
+}
+.contenido a:hover {
+    color: var(--color-secundario);
+}
+
+
+
+
+
+@media (max-width: 660px) {
+    .lovestory {
+        grid-template-columns: 1fr;
+    }
+    .lovestory-img {
+        height: 50vh;
+    }
+    .info-cards {
+        flex-direction: column;    
+    }
+    .info {
+        background-image: url(./background/backphone.png);
+    }
+    .galeria {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+    .galeria img {
+        width: 50vw;
+    }
+}
