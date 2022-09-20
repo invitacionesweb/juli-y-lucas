@@ -27,7 +27,7 @@ body h2 {
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,27 +69,35 @@ header .boxuno {
     }
 }
 .inicio img {
-    width: 318px;
+    width: 80vw;
+    max-width: 500px;
     padding: 0;
-}
-header audio {
-    margin-bottom: 10px;
+    
 }
 .boton {
-   border: 1px solid var(--color-secundario);
-   background-color: var(--color-secundario);
-   color: var(--color-principal);
-   padding: 10px 30PX;
-   text-decoration: none;
-}
-.boton:hover {
-    color: var(--color-secundario);
-    background-color: var(--color-principal);
     border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
     padding: 10px 30PX;
-    text-align: center;
     text-decoration: none;
+ }
+ .boton:hover {
+     color: var(--color-secundario);
+     background-color: var(--color-principal);
+     border: 1px solid var(--color-secundario);
+     padding: 10px 30PX;
+     text-align: center;
+     text-decoration: none;
+ }
+
+.lovestory-text .audiodiv {
+    padding: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 h1 {
     color: var(--color-terciario);
@@ -126,7 +134,7 @@ header p {
     grid-template-columns: 1fr 1fr;
 }
 .lovestory-text {
-    padding: 60px 40px;
+    padding: 20px 40px;
     text-align: justify;
 }
 
@@ -198,7 +206,7 @@ header p {
     height: 80vh;
     background-color: var(--color-terciario);
     background-image: url(./img/Group7pc.png);
-    background-position: right;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -261,7 +269,7 @@ header p {
     height: 80vh;
     background-color: var(--color-principal);
     background-image: url(./img/Groupp.png);
-    background-position: top;
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -283,8 +291,7 @@ header p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    
+ 
     
 }
 .regalos-card h2 {
@@ -297,8 +304,7 @@ header p {
     padding: 0;
     margin: 0;
     font-size: 20px;
-
-    
+ 
 }
 
 #contenedor {
@@ -315,11 +321,11 @@ header p {
 }
 
 span#enlace {
-    color: var(--color-terciario);
+    background-color: var(--color-terciario);
     font-size: 1em;
     padding: 8px ;
     text-align: center;
-    background-color: var(--color-principal);
+    color: var(--color-principal);
 
     border: 1px solid var(--color-terciario);
     margin-top: 10px;
@@ -327,7 +333,7 @@ span#enlace {
 }
 
 button#copiador {
-    background-color: var(--color-principal);
+    background-color: var(--color-terciario);
     color: white;
     border: none;
     padding: 8px;    
@@ -346,20 +352,16 @@ button#copiador {
     color: var(--color-terciario);
     padding: 4px 0;
     font-size: 20px;
-
-}
-.final {
-    background-attachment: fixed;
-    width: 100%;
-    height: auto;
-    background-color: var(--color-principal);
-    background-image:url(background/background1.png);
-    background-repeat: no-repeat;
     
 
 }
+.final {
+    width: 100%;
+    height: auto;
+
+}
 .final img {
-    width: 320px;
+    width: 100%;
     
 }
 .end {
