@@ -471,7 +471,7 @@ footer img {
 
     header .boxuno {
         background-image: url(./nuevasGraficas/iPhoneback1.png);
-        background-size: contain;
+        background-size: cover;
     }
     .lovestory {
         grid-template-columns: 1fr;
