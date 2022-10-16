@@ -120,7 +120,7 @@ header p {
     color: var(--color-principal);
     text-align: center;
     padding:20px 0;
-    font-size: 16px;
+    font-size: 22px;
 }
 .countdown p {
     margin: 0;
@@ -168,10 +168,17 @@ header p {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.info p {
+.info .datos{
     font-size: 20px;
+    font-weight: bolder;
 
 }
+.info p {
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
 .animado {
     width: 340px;
 
